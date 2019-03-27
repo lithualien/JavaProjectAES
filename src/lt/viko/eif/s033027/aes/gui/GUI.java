@@ -14,21 +14,34 @@ public class GUI extends JFrame {
 
     // Buttons
     private JButton selectDirectory = new JButton("Direktorija");
-    private JButton confirmDirectory = new JButton("Patvirtinti");
+    private JButton engagePauseAndUnpause = new JButton("Pause/Unpause");
+    private JButton startEncrypting = new JButton("Užkoduoti");
+    private JButton startDecrypting = new JButton("Atkoduoti");
+    private JButton sosStop = new JButton("SOS STOP");
 
     // Progress bar
    // private JProgressBar codingStatus;
 
+    private final Object syncObject = new Object();
+
     // File
-    private File file = new File("C:\\Users\\tomax\\Desktop\\JavaProjectAES");
+    private File file = new File("C:\\Users\\tomax\\Desktop\\test – kopija");
 
     //
     private ProgramExecution programExecution = new ProgramExecution();
 
+    boolean pause = false;
+    // threadai
+    private  Thread t1;
+    private Thread t2;
+
     public void executeProgram() {
         setUpGUI();
         setInputDirectory();
-        setConfirmDirectory();
+        setEngagePauseAndUnpause();
+        setStartDecrypting();
+        setStartEncrypting();
+        setSosStop();
     }
 
     private void setUpGUI() {
@@ -43,13 +56,17 @@ public class GUI extends JFrame {
         setVisible(true);
         mainPanel.setLayout(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setSize(500, 500);
+        setSize(500, 190);
+        setResizable(false);
     }
 
     private void addToMainPanel() {
         mainPanel.add(selectDirectory); // adding components to the mainPanel;
-        mainPanel.add(confirmDirectory);
+        mainPanel.add(engagePauseAndUnpause);
         mainPanel.add(inputDirectory);
+        mainPanel.add(startDecrypting);
+        mainPanel.add(startEncrypting);
+        mainPanel.add(sosStop);
     }
 
     private void setJTextField() {
@@ -58,7 +75,11 @@ public class GUI extends JFrame {
 
     private void setJButton() {
         selectDirectory.setBounds(330, 20, 130, 30); // setting up JButton properties.
-        confirmDirectory.setBounds(20, 60, 440, 30);
+        engagePauseAndUnpause.setBounds(320, 60, 140, 30);
+        startEncrypting.setBounds(20, 60, 140, 30);
+        startDecrypting.setBounds(170, 60, 140, 30);
+        sosStop.setBounds(20, 100, 440, 30);
+
     }
 
     private void setInputDirectory() {
@@ -77,37 +98,68 @@ public class GUI extends JFrame {
         });
     }
 
-    private void setConfirmDirectory() {
-        confirmDirectory.addActionListener(e ->
+    private void setEngagePauseAndUnpause() {
+        engagePauseAndUnpause.addActionListener(e ->
+        {
+            pause = !pause;
+
+        });
+    }
+
+    private void setStartEncrypting() {
+        startEncrypting.addActionListener(e ->
         {
             createFirstThread();
-            createSecondThread();
+            createEncryptingThread();
+        });
+    }
+
+    private void setStartDecrypting() {
+        startDecrypting.addActionListener(e ->
+        {
+            createFirstThread();
+            createDecryptingThread();
+        });
+    }
+
+    private void setSosStop() {
+        sosStop.addActionListener(e ->
+        {
+            programExecution.stop = true;
         });
     }
 
     private void createFirstThread() {
-        Thread t = new Thread(() ->
+        t1 = new Thread(() ->
         {
 
         });
-        t.start();
+        t1.start();
     }
 
-    private void createSecondThread() {
-        Thread t = new Thread(() ->
+    private void createEncryptingThread() {
+        t2 = new Thread(() ->
         {
             try {
-                //programExecution.checkIfFileForEncode(file);
-
-                //programExecution.stop = true;
-
-                programExecution.checkIfFileForDecode(file);
-
+                programExecution.checkIfFileForEncode(file);
             }
             catch (Exception e) {
                 e.printStackTrace();
             }
         });
-        t.start();
+        t2.start();
+    }
+
+    private void createDecryptingThread() {
+        t2 = new Thread(() ->
+        {
+            try {
+                programExecution.checkIfFileForDecode(file);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        t2.start();
     }
 }
