@@ -97,11 +97,12 @@ public class GUI extends JFrame {
         Thread t = new Thread(() ->
         {
             try {
-
-                programExecution.checkIfFileForEncode(file);
+                //programExecution.getDir(file);
+                //programExecution.checkIfFileForEncode(file);
 
                 //programExecution.stop = true;
-                //programExecution.checkIfFileForDecode(file);
+
+                programExecution.checkIfFileForDecode(file);
 
             }
             catch (Exception e) {
