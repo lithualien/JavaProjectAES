@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6e8fc20-db8c-4e7d-96a9-ae8266b6b9a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/zip4j_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaProjectAES.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaProjectAES.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/ZipFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test – kopi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="104" column="60" lean-forward="true" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
+            <state relative-caret-position="1734">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +47,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+            <state relative-caret-position="-658">
+              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/ZipFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Encrypt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="1348">
               <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -121,6 +140,8 @@
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/GUI/AESAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/GUI/GUI.java" />
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java" />
+        <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java" />
+        <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/ZipFile.java" />
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" />
       </list>
     </option>
@@ -161,35 +182,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JavaProjectAES" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjectAES" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="aes" type="462c0819:PsiDirectoryNode" />
-              <item name="crypting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjectAES" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjectAES" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="aes" type="462c0819:PsiDirectoryNode" />
-              <item name="execution" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjectAES" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjectAES" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="aes" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjectAES" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjectAES" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="aes" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="e9f4de52:FormNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -205,7 +197,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553713349460" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553714231411" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/zippingTool/zip4j_1.3.2.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -259,18 +251,17 @@
       <workItem from="1553435524287" duration="14323000" />
       <workItem from="1553532282387" duration="15628000" />
       <workItem from="1553606680128" duration="17767000" />
-      <workItem from="1553689113056" duration="21044000" />
+      <workItem from="1553689113056" duration="22055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79065000" />
+    <option name="totallyTimeSpent" value="80076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="371" y="22" width="1548" height="929" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23498695" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23498695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -279,7 +270,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27017114" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27017114" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41595092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -365,10 +356,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Encrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1348">
+          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="104" column="60" lean-forward="true" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
+        <state relative-caret-position="1734">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -385,21 +387,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Encrypt.java">
+    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3218#3219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/ZipFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+        <state relative-caret-position="-658">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

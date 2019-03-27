@@ -97,7 +97,6 @@ public class GUI extends JFrame {
         Thread t = new Thread(() ->
         {
             try {
-                //programExecution.getDir(file);
                 //programExecution.checkIfFileForEncode(file);
 
                 //programExecution.stop = true;
