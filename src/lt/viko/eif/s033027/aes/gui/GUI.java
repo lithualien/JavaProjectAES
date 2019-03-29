@@ -20,9 +20,7 @@ public class GUI extends JFrame {
     private JButton sosStop = new JButton("SOS STOP");
 
     // Progress bar
-   // private JProgressBar codingStatus;
-
-    private final Object syncObject = new Object();
+    private JProgressBar codingStatus = new JProgressBar();
 
     // File
     private File file = new File("C:\\Users\\tomax\\Desktop\\test – kopija");
@@ -31,9 +29,16 @@ public class GUI extends JFrame {
     private ProgramExecution programExecution = new ProgramExecution();
 
     boolean pause = false;
+    boolean unPause = false;
+    boolean sos = false;
+
+    private final Object object = new Object();
     // threadai
     private  Thread t1;
     private Thread t2;
+
+    private boolean running;
+    private boolean crypting;
 
     public void executeProgram() {
         setUpGUI();
@@ -49,6 +54,7 @@ public class GUI extends JFrame {
         addToMainPanel();
         setJTextField();
         setJButton();
+        setJProgressBar();
     }
 
     private void setMainPanel() {
@@ -56,7 +62,7 @@ public class GUI extends JFrame {
         setVisible(true);
         mainPanel.setLayout(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setSize(500, 190);
+        setSize(500, 220);
         setResizable(false);
     }
 
@@ -67,6 +73,7 @@ public class GUI extends JFrame {
         mainPanel.add(startDecrypting);
         mainPanel.add(startEncrypting);
         mainPanel.add(sosStop);
+        mainPanel.add(codingStatus);
     }
 
     private void setJTextField() {
@@ -80,6 +87,10 @@ public class GUI extends JFrame {
         startDecrypting.setBounds(170, 60, 140, 30);
         sosStop.setBounds(20, 100, 440, 30);
 
+    }
+
+    private void setJProgressBar() {
+        codingStatus.setBounds(20, 150, 440, 30);
     }
 
     private void setInputDirectory() {
@@ -102,64 +113,125 @@ public class GUI extends JFrame {
         engagePauseAndUnpause.addActionListener(e ->
         {
             pause = !pause;
-
+            unPause = !unPause;
         });
     }
 
     private void setStartEncrypting() {
         startEncrypting.addActionListener(e ->
         {
-            createFirstThread();
-            createEncryptingThread();
+            startEncrypting();
         });
+    }
+
+    private void startEncrypting() {
+        setUpParameterBeforeCrypting();
+        createFirstThread();
+        createEncryptingThread();
     }
 
     private void setStartDecrypting() {
         startDecrypting.addActionListener(e ->
         {
-            createFirstThread();
-            createDecryptingThread();
+            startDecrypting();
         });
+    }
+
+    private void startDecrypting() {
+        setUpParameterBeforeCrypting();
+        createFirstThread();
+        createDecryptingThread();
+    }
+
+    private void setUpParameterBeforeCrypting() {
+        running = true;
+        crypting = false;
+        sos = false;
+        programExecution.running = true;
+        programExecution.zipRequired = false;
+        programExecution.counterOfFolders = 0;
+        programExecution.currentFolder = 0;
     }
 
     private void setSosStop() {
         sosStop.addActionListener(e ->
         {
-            programExecution.stop = true;
+           sos = true;
         });
     }
 
     private void createFirstThread() {
-        t1 = new Thread(() ->
-        {
-
+        t1 = new Thread(() -> {
+            //programExecution.
+            while(running) {
+                setProgressBar();
+                try {
+                    t1.sleep(300);
+                }
+                catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            programExecution.currentFolder++;
+            checkOnSosCall();
         });
         t1.start();
     }
 
     private void createEncryptingThread() {
-        t2 = new Thread(() ->
-        {
-            try {
-                programExecution.checkIfFileForEncode(file);
-            }
-            catch (Exception e) {
-                e.printStackTrace();
-            }
+        t2 = new Thread(() -> {
+            programExecution.checkIfFileForEncode(file);
+            running = false;
         });
         t2.start();
     }
 
     private void createDecryptingThread() {
-        t2 = new Thread(() ->
-        {
-            try {
-                programExecution.checkIfFileForDecode(file);
-            }
-            catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+        t2 = new Thread(() -> {
+            programExecution.checkIfFileForDecode(file);
+            running = false;
+            });
         t2.start();
+    }
+
+    private void pauseThread() {
+        if(pause) {
+            synchronized (this.object) {
+                try {
+                    object.wait();
+                }
+                catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        } else if(unPause) {
+            synchronized (this.object) {
+                object.notify();
+            }
+        }
+    }
+
+    private void checkOnSosCall() {
+        if(sos) {
+            if(!programExecution.returnRunning()) {
+                file = programExecution.returnNewFile();
+                if(crypting) {
+                    startDecrypting();
+                }
+                else {
+                    startEncrypting();
+                }
+            }
+        }
+    }
+
+    private void setProgressBar()
+    {
+        try
+        {
+            codingStatus.setMaximum(programExecution.getCounterOfFolders());
+            codingStatus.setValue(programExecution.getCurrentFolder());
+        }
+        catch (Exception e) { }
     }
 }

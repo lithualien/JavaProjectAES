@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6e8fc20-db8c-4e7d-96a9-ae8266b6b9a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/execution/ProgramExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/execution/ProgramExecution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/gui/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/gui/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +27,8 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -40,22 +38,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java">
+        <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="272">
+              <caret line="166" column="33" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2619#2620#0" expanded="true" />
+                <element signature="e#2646#2647#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="34">
+              <caret line="124" column="37" lean-forward="true" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+              <folding>
+                <element signature="e#5559#5560#0" expanded="true" />
+                <element signature="e#5627#5628#0" expanded="true" />
+                <element signature="e#5706#5707#0" expanded="true" />
+                <element signature="e#5779#5780#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +101,8 @@
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/GUI/GUI.java" />
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java" />
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/ZipFile.java" />
-        <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" />
         <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java" />
+        <option value="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" />
       </list>
     </option>
   </component>
@@ -107,11 +112,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="782" />
-    <option name="y" value="12" />
-    <option name="width" value="1137" />
-    <option name="height" value="880" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="862" />
+    <option name="y" value="16" />
+    <option name="width" value="947" />
+    <option name="height" value="887" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -119,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,6 +149,13 @@
               <item name="JavaProjectAES" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aes" type="462c0819:PsiDirectoryNode" />
+              <item name="execution" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProjectAES" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProjectAES" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aes" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -156,7 +169,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,7 +178,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553724226904" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553819393052" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/zippingTool/zip4j_1.3.2.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -223,6 +235,7 @@
       <workItem from="1553689113056" duration="26369000" />
       <workItem from="1553721113222" duration="83000" />
       <workItem from="1553721310467" duration="2980000" />
+      <workItem from="1553781348274" duration="26830000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed a few things and make the code tidy.">
       <created>1553714247310</created>
@@ -235,13 +248,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87453000" />
+    <option name="totallyTimeSpent" value="114283000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="862" y="16" width="947" height="887" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30150753" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14179105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -250,7 +263,39 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21465969" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26392573" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41595092" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3275862" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32872927" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14179105" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21329047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41595092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,7 +316,7 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -303,15 +348,7 @@
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Decrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Encrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/ForBoth.java" />
-    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/ZipFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/zipping/UnzipFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -326,6 +363,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="166" column="33" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
+          <folding>
+            <element signature="e#2619#2620#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="124" column="37" lean-forward="true" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+          <folding>
+            <element signature="e#5559#5560#0" expanded="true" />
+            <element signature="e#5627#5628#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
+            <element signature="e#5779#5780#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

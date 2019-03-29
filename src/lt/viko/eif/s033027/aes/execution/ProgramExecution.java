@@ -18,15 +18,21 @@ public class ProgramExecution {
     private ZipFile zipFile = new ZipFile();
     private UnzipFile unzipFile = new UnzipFile();
 
-    public boolean stop = false;
 
-    private boolean zipRequired = false;
+    public boolean stop = false;
+    private File newestFile;
+    public boolean zipRequired = false;
 
     private List<String> folderNames = new ArrayList<>();
+
+    public boolean running = true;
+    public int counterOfFolders;
+    public int currentFolder;
 
     public void checkIfFileForEncode(File file) {
         if (file.isFile() && checkForEncodeFileIndex(file)) {
             encrypt(file);
+            newestFile = new File(file + ".des");
         }
         else {
             getDir(file);
@@ -34,8 +40,10 @@ public class ProgramExecution {
             if(zipRequired) {
                 zipFile.setUpForZipping(file);
                 encrypt(new File(file.getAbsolutePath() + ".zip"));
+                newestFile = new File(file + ".zip.des");
             }
         }
+        running = false;
     }
 
     public void checkIfFileForDecode(File file) {
@@ -44,14 +52,17 @@ public class ProgramExecution {
             decrypt(file);
             if(newFile.getName().substring(newFile.getName().lastIndexOf(".") + 1).equals("zip")) {
                 unzipFile.unZip(newFile);
+
                 newFile.delete();
-                File newestFile =  new File(newFile.getParent() + "\\" + newFile.getName().replaceFirst(".zip",""));
+                newestFile =  new File(newFile.getParent() + "\\" + newFile.getName().replaceFirst(".zip",""));
+                getDir(newestFile);
                 recursionToDecrypt(newestFile);
             }
         }
         else {
             recursionToDecrypt(file);
         }
+        running = false;
     }
 
     private boolean checkForEncodeFileIndex(File file) {
@@ -104,7 +115,6 @@ public class ProgramExecution {
             decrypt.deleteEverythingAfterDecryption(file);
         }
         else {
-            System.out.println("Blogi hash");
         }
     }
 
@@ -115,14 +125,11 @@ public class ProgramExecution {
                 if (temp.isFile() && checkForEncodeFileIndex(temp)) {
                     encrypt(temp);
                 }
-                if (stop) {
-                    break;
-                }
-
-                if (temp.isDirectory()) {
-
-                }
                 recursionToEncrypt(temp);
+
+                if(temp.getAbsolutePath().equals(folderNames.get(currentFolder))) {
+                    currentFolder++;
+                }
             }
         }
         catch (Exception e) {
@@ -136,32 +143,48 @@ public class ProgramExecution {
                 if (temp.isFile() && checkForDecodeFileIndex(temp)) {
                     decrypt(temp);
                 }
-                if (stop) {
-                    break;
-                }
                 recursionToDecrypt(temp);
+
+                if(counterOfFolders > currentFolder) {
+                    if(temp.getAbsolutePath().equals(folderNames.get(currentFolder))){
+                        currentFolder++;
+                    }
+                }
             }
         }
-        catch (Exception e) {
-        }
+        catch (Exception e) { }
     }
 
     public void getDir(File file) {
-        int counterOfFolders = 0;
+        counterOfFolders = 0;
         File files[] = file.listFiles();
         for (File temp : files) {
-            folderNames.add(temp.getAbsolutePath());
+
             if (temp.isDirectory()) {
                 counterOfFolders++;
-                System.out.println("I've been added");
+                folderNames.add(temp.getAbsolutePath());
             }
-            System.out.println(temp.getAbsolutePath());
         }
 
         if (counterOfFolders >= 1) {
             zipRequired = true;
-            System.out.println("I've been changed");
         }
+    }
+
+    public File returnNewFile() {
+        return newestFile;
+    }
+
+    public boolean returnRunning() {
+        return running;
+    }
+
+    public int getCounterOfFolders() {
+        return counterOfFolders;
+    }
+
+    public int getCurrentFolder() {
+        return currentFolder;
     }
 
 }
