@@ -172,8 +172,8 @@ public class GUI extends JFrame {
                     e.printStackTrace();
                 }
             }
-            programExecution.currentFolder++;
             checkOnSosCall();
+            codingStatus.setMaximum(1);
         });
         t1.start();
     }
@@ -215,8 +215,10 @@ public class GUI extends JFrame {
         if(sos) {
             if(!programExecution.returnRunning()) {
                 file = programExecution.returnNewFile();
+                System.out.println(file.getAbsolutePath());
                 if(crypting) {
                     startDecrypting();
+
                 }
                 else {
                     startEncrypting();
@@ -225,10 +227,8 @@ public class GUI extends JFrame {
         }
     }
 
-    private void setProgressBar()
-    {
-        try
-        {
+    private void setProgressBar() {
+        try {
             codingStatus.setMaximum(programExecution.getCounterOfFolders());
             codingStatus.setValue(programExecution.getCurrentFolder());
         }

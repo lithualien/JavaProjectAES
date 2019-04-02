@@ -52,14 +52,15 @@ public class ProgramExecution {
             decrypt(file);
             if(newFile.getName().substring(newFile.getName().lastIndexOf(".") + 1).equals("zip")) {
                 unzipFile.unZip(newFile);
-
                 newFile.delete();
                 newestFile =  new File(newFile.getParent() + "\\" + newFile.getName().replaceFirst(".zip",""));
+                System.out.println(newestFile.getAbsolutePath());
                 getDir(newestFile);
                 recursionToDecrypt(newestFile);
             }
         }
         else {
+            getDir(newestFile);
             recursionToDecrypt(file);
         }
         running = false;

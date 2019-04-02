@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6e8fc20-db8c-4e7d-96a9-ae8266b6b9a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProjectAES/META-INF/JavaProjectAES.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/execution/ProgramExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/execution/ProgramExecution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/gui/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjectAES/lt/viko/eif/s033027/aes/gui/GUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java" afterDir="false" />
@@ -40,12 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="166" column="33" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
-              <folding>
-                <element signature="e#2619#2620#0" expanded="true" />
-                <element signature="e#2646#2647#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
             </state>
           </provider>
         </entry>
@@ -53,14 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="124" column="37" lean-forward="true" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
-              <folding>
-                <element signature="e#5559#5560#0" expanded="true" />
-                <element signature="e#5627#5628#0" expanded="true" />
-                <element signature="e#5706#5707#0" expanded="true" />
-                <element signature="e#5779#5780#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="146">
+              <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -78,6 +69,7 @@
     <findStrings>
       <find>recursion</find>
       <find />
+      <find>return</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,11 +104,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="862" />
-    <option name="y" value="16" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="342" />
     <option name="width" value="947" />
-    <option name="height" value="887" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,7 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -169,6 +159,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,10 +167,14 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553819393052" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zippingTool/zip4j_1.3.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -236,6 +231,8 @@
       <workItem from="1553721113222" duration="83000" />
       <workItem from="1553721310467" duration="2980000" />
       <workItem from="1553781348274" duration="26830000" />
+      <workItem from="1553849517769" duration="835000" />
+      <workItem from="1553853649755" duration="1232000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed a few things and make the code tidy.">
       <created>1553714247310</created>
@@ -248,13 +245,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114283000" />
+    <option name="totallyTimeSpent" value="116350000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="862" y="16" width="947" height="887" extended-state="0" />
+    <frame x="342" y="0" width="947" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14179105" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21533258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -263,7 +260,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26392573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26259542" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41595092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,24 +324,12 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Container.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/nio/fs/WindowsPathParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/nio/fs/WindowsPathParser.class" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/GUI/cryptology/Encrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/GUI/cryptology/FileEncryptionAndDecryption.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/GUI/cryptology/Decrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.form" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileOutputStream.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Decrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/Encrypt.java" />
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/crypting/ForBoth.java" />
@@ -368,25 +353,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="166" column="33" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
-          <folding>
-            <element signature="e#2619#2620#0" expanded="true" />
-            <element signature="e#2646#2647#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lt/viko/eif/s033027/aes/execution/ProgramExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="124" column="37" lean-forward="true" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
-          <folding>
-            <element signature="e#5559#5560#0" expanded="true" />
-            <element signature="e#5627#5628#0" expanded="true" />
-            <element signature="e#5706#5707#0" expanded="true" />
-            <element signature="e#5779#5780#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="146">
+          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
         </state>
       </provider>
     </entry>
